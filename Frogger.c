@@ -24,7 +24,6 @@ unsigned char youwin[] = "You Win!";
 unsigned char youlose[] = "You Lose!";
 int turtle = 0;
 int logs = 0;
-
 //------------------------------------------------------------
 void drawFrog(int cxbody, int cybody, int wbody, unsigned short color){
 	GLCD_SetTextColor(color);
