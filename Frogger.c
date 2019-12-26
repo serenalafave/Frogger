@@ -3,14 +3,6 @@
 #include "GLCD_UTILS.h"
 #include "Math.h"
 #include <stdlib.h>
-//#define PINSEL_EINT0    20
-//#define PINSEL_EINT1    22  
-//#define SBIT_EINT0      0
-//#define SBIT_EINT1      1  
-//#define SBIT_EXTMODE0   0
-//#define SBIT_EXTMODE1   1
-//#define SBIT_EXTPOLAR0  0
-//#define SBIT_EXTPOLAR1  1
 //------------------------------------------------------------
 int i;
 int j;
@@ -59,7 +51,6 @@ int dispArr[13][13] = {
 2,2,2,2,2,2,2,8,8,2,2,2,2,
 2,2,2,2,2,2,2,2,2,2,2,3,2,
 6,6,6,6,6,6,6,6,6,6,6,6,6,};
-
 //------------------------------------------------------------
 // Draw Board Functions
 //------------------------------------------------------------
@@ -275,16 +266,7 @@ void drawBackground(){
 		}
 	}
 }
-
 //------------------------------------------------------------
-//void EINT0_IRQHandler(void)
-//{
-
-//    LPC_SC->EXTINT = (1<<SBIT_EINT0);  /* Clear Interrupt Flag */
-
-//    LPC_GPIO2->FIOPIN ^= (1<< LED1);   /* Toggle the LED1 everytime INTR0 is generated */
-
-//}
 void moveFrog(){
 	if ((LPC_GPIO1->FIOPIN & right) == 0){
 		if(cxbody<=240){
