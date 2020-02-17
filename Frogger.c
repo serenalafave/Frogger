@@ -79,12 +79,12 @@ void drawWater(row,col){
 }
 
 void drawRoad(row,col){
- GLCD_SetTextColor(DarkGrey);
- for(ix = col*20;ix < ((col*20)+20);ix++){
-  for(iy = (row*18)+6; iy < ((row*18)+24); iy++){
-   GLCD_PutPixel(ix,iy);
-  }
- }
+	GLCD_SetTextColor(DarkGrey);
+	for(ix = col*20;ix < ((col*20)+20);ix++){
+		for(iy = (row*18)+6; iy < ((row*18)+24); iy++){
+			GLCD_PutPixel(ix,iy);
+		}
+	}
 }
 
 void drawCar(row,col){
